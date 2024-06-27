@@ -27,7 +27,7 @@ jobs:
       uses: docker/login-action@v2.2.0
       with:
         username: hi31145227@aliyun.com
-        password: !it9s2cu
+        password: '!it9s2cu'
         logout: false
     
     # 使用shell命令批量同步所需的镜像到dockerHub中
