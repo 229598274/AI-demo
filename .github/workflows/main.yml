@@ -35,5 +35,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/calico/node-driver-registrar:v3.28.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/node-driver-registrar:v3.28.0
+        skopeo copy docker://docker.io/calico/apiserver:v3.28.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/apiserver:v3.28.0
 
