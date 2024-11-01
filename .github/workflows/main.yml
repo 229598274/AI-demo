@@ -35,5 +35,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.elastic.co/logstash/logstash:8.11.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/logstash:8.11.4
+        skopeo copy docker://jenkins/jenkins:2.479.1-jdk17 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/jenkins:2.479.1-jdk17
 
