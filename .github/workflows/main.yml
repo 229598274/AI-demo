@@ -35,5 +35,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://nginx/nginx-ingress:3.6.1 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/nginx-ingress:3.6.1
+        skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:8.11.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/elasticsearch:8.11.4
 
