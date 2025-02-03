@@ -56,8 +56,8 @@ jobs:
         #skopeo copy docker://minio/minio:RELEASE.2023-03-20T20-16-18Z docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/minio:RELEASE.2023-03-20T20-16-18Z
         #skopeo copy docker://milvusdb/milvus:v2.5.0-beta docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/milvus:v2.5.0-beta
         
-       skopeo copy docker://opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opensearch:latest
-       skopeo copy docker://opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opensearch-dashboards:latest
+        skopeo copy docker://opensearchproject/opensearch:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opensearch:latest
+        skopeo copy docker://opensearchproject/opensearch-dashboards:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opensearch-dashboards:latest
        
        # skopeo copy docker://myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/myscaledb:1.6.4
         #skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/elasticsearch:8.14.3
