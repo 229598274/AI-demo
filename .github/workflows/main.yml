@@ -35,23 +35,23 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://langgenius/dify-api:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-api:0.15.2
-        skopeo copy docker://langgenius/dify-web:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-web:0.15.2
-        skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
-        skopeo copy docker://redis:6-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/redis:6-alpine
-        skopeo copy docker://langgenius/dify-sandbox:0.2.10 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-sandbox:0.2.10
-        skopeo copy docker://ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/squid:latest
-        skopeo copy docker://certbot/certbot docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/certbot
-        skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/nginx:latest
-        #skopeo copy docker://pingcap/tidb:v8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/tidb:v8.4.0
-        #skopeo copy docker://semitechnologies/weaviate:1.19.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/weaviate:1.19.0
-        #skopeo copy docker://langgenius/qdrant:v1.7.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/qdrant:v1.7.3
-        #skopeo copy docker://pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvector:pg16
-        #skopeo copy docker://tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvecto-rs:pg16-v0.3.0
-        #skopeo copy docker://ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/chroma:0.5.20
-        #skopeo copy docker://pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvector:pg16
-        #skopeo copy docker://quay.io/oceanbase/oceanbase-ce:4.3.3.0-100000142024101215 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/oceanbase-ce:4.3.3.0-100000142024101215
-        #skopeo copy docker://container-registry.oracle.com/database/free:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/free:latest
+        #skopeo copy docker://langgenius/dify-api:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-api:0.15.2
+        #skopeo copy docker://langgenius/dify-web:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-web:0.15.2
+        #skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
+        #skopeo copy docker://redis:6-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/redis:6-alpine
+        #skopeo copy docker://langgenius/dify-sandbox:0.2.10 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-sandbox:0.2.10
+        #skopeo copy docker://ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/squid:latest
+        #skopeo copy docker://certbot/certbot docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/certbot
+        #skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/nginx:latest
+        skopeo copy docker://pingcap/tidb:v8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/tidb:v8.4.0
+        skopeo copy docker://semitechnologies/weaviate:1.19.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/weaviate:1.19.0
+        skopeo copy docker://langgenius/qdrant:v1.7.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/qdrant:v1.7.3
+        skopeo copy docker://pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvector:pg16
+        skopeo copy docker://tensorchord/pgvecto-rs:pg16-v0.3.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvecto-rs:pg16-v0.3.0
+        skopeo copy docker://ghcr.io/chroma-core/chroma:0.5.20 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/chroma:0.5.20
+        skopeo copy docker://pgvector/pgvector:pg16 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/pgvector:pg16
+        skopeo copy docker://quay.io/oceanbase/oceanbase-ce:4.3.3.0-100000142024101215 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/oceanbase-ce:4.3.3.0-100000142024101215
+        skopeo copy docker://container-registry.oracle.com/database/free:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/free:latest
         #skopeo copy docker://quay.io/coreos/etcd:v3.5.5 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/etcd:v3.5.5
         #skopeo copy docker://minio/minio:RELEASE.2023-03-20T20-16-18Z docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/minio:RELEASE.2023-03-20T20-16-18Z
         #skopeo copy docker://milvusdb/milvus:v2.5.0-beta docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/milvus:v2.5.0-beta
