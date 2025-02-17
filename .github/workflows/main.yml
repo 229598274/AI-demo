@@ -61,7 +61,7 @@ jobs:
         #skopeo copy docker://mcr.microsoft.com/mssql/server:2022-latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/mssql-server:2022-latest
         #skopeo copy docker://hub.zentao.net/app/zentao:21.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/zentao:21.2
         #skopeo copy docker://docker:dind docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/docker:dind
-        skopeo copy docker://gitlab/gitlab-ce:15.11.13 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/gitlab-ce:15.11.13
+        skopeo copy docker://gitlab/gitlab-ce:15.11.13-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/gitlab-ce:15.11.13-ce.0
        # skopeo copy docker://myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/myscaledb:1.6.4
         #skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/elasticsearch:8.14.3
        # skopeo copy docker://docker.elastic.co/kibana/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/kibana:8.14.3
