@@ -35,7 +35,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://python:3.11-slim docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/python:3.11-slim
+        skopeo copy docker://python:3.9 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/python:3.9
         #skopeo copy docker://langgenius/dify-api:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-api:0.15.2
         #skopeo copy docker://langgenius/dify-web:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-web:0.15.2
         #skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
