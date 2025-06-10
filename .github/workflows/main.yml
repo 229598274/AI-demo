@@ -35,8 +35,9 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://hub.zentao.net/app/zentao:18.13 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/zentao:18.13
-        skopeo copy docker://mariadb:10.6 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/mariadb:10.6
+        skopeo copy docker://jre:8 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/jre:8
+        #skopeo copy docker://hub.zentao.net/app/zentao:18.13 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/zentao:18.13
+        #skopeo copy docker://mariadb:10.6 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/mariadb:10.6
         #skopeo copy docker://langgenius/dify-api:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-api:0.15.2
         #skopeo copy docker://langgenius/dify-web:0.15.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/dify-web:0.15.2
         #skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
@@ -63,9 +64,9 @@ jobs:
         #skopeo copy docker://mcr.microsoft.com/mssql/server:2022-latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/mssql-server:2022-latest
         #skopeo copy docker://hub.zentao.net/app/zentao:21.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/zentao:21.2
         #skopeo copy docker://docker:dind docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/docker:dind
-        skopeo copy docker://gitlab/gitlab-ce:15.11.13-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/gitlab-ce:15.11.13-ce.0
-       # skopeo copy docker://myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/myscaledb:1.6.4
+        #skopeo copy docker://gitlab/gitlab-ce:15.11.13-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/gitlab-ce:15.11.13-ce.0
+        #skopeo copy docker://myscale/myscaledb:1.6.4 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/myscaledb:1.6.4
         #skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/elasticsearch:8.14.3
-       # skopeo copy docker://docker.elastic.co/kibana/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/kibana:8.14.3
-       # skopeo copy docker://downloads.unstructured.io/unstructured-io/unstructured-api:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/unstructured-api:latest
+        #skopeo copy docker://docker.elastic.co/kibana/kibana:8.14.3 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/kibana:8.14.3
+        #skopeo copy docker://downloads.unstructured.io/unstructured-io/unstructured-api:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/unstructured-api:latest
 
