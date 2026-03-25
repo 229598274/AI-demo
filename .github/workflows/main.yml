@@ -35,8 +35,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://cvat/server:v2.61.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/cvat_server:v2.61.0
-        skopeo copy docker://cvat/ui:v2.61.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/cvat_ui:v2.61.0
+        skopeo copy docker://heartexlabs/label-studio:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/label-studio:latest
+        #skopeo copy docker://cvat/ui:v2.61.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/cvat_ui:v2.61.0
         #skopeo copy docker://clickhouse/clickhouse-server:23.11-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/clickhouse-server:23.11-alpine
         #skopeo copy docker://openpolicyagent/opa:1.12.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opa:1.12.2
         #skopeo copy docker://traefik:v3.6 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/traefik:v3.6
