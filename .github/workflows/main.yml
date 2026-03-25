@@ -35,14 +35,14 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://grafana/grafana-oss:10.1.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/grafana-oss:10.1.2
-        skopeo copy docker://timberio/vector:0.26.0-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/vector:0.26.0-alpine
-        skopeo copy docker://clickhouse/clickhouse-server:23.11-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/clickhouse-server:23.11-alpine
-        skopeo copy docker://openpolicyagent/opa:1.12.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opa:1.12.2
-        skopeo copy docker://traefik:v3.6 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/traefik:v3.6
-        skopeo copy docker://apache/kvrocks:2.12.1 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/kvrocks:2.12.1
-        skopeo copy docker://redis:7.2.11-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/redis:7.2.11-alpine
-        skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
+        skopeo copy docker://cvat/server:v2.61.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/cvat_server:v2.61.0
+        skopeo copy docker://cvat/ui:v2.61.0 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/cvat/ui:v2.61.0
+        #skopeo copy docker://clickhouse/clickhouse-server:23.11-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/clickhouse-server:23.11-alpine
+        #skopeo copy docker://openpolicyagent/opa:1.12.2 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/opa:1.12.2
+        #skopeo copy docker://traefik:v3.6 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/traefik:v3.6
+        #skopeo copy docker://apache/kvrocks:2.12.1 docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/kvrocks:2.12.1
+        #skopeo copy docker://redis:7.2.11-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/redis:7.2.11-alpine
+        #skopeo copy docker://postgres:15-alpine docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/postgres:15-alpine
         #skopeo copy docker://ubuntu/squid:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/squid:latest
         #skopeo copy docker://certbot/certbot docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/certbot
         #skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/pit_mall/nginx:latest
